@@ -1,0 +1,108 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  margin: auto;
+  color: white;
+}
+
+.logo {
+  padding-left: 2em;
+}
+
+.logo img {
+  max-width: 5em;
+  max-height: 5em;
+  min-width: 1em;
+  min-height: 1em;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1em;
+  font-weight: bold;
+  font-size: large;
+  padding-right: 2em;
+}
+
+a:hover {
+  color: #03dac6;
+  text-shadow: 1px 15px 20px #03dac6;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: none;
+}
+
+.nav_links,
+.logo {
+  flex: 1;
+}
+
+.intro {
+  min-height: 10vh;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.intro:hover {
+  cursor: none;
+}
+
+.illustration {
+  overflow: hidden;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2em;
+}
+
+.illustration img {
+  width: 100%;
+  max-width: 30em;
+  height: auto;
+}
+
+.scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll img {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  min-width: 1em;
+  min-height: 1em;
+  max-width: 5em;
+  max-height: 5em;
+  filter: grayscale(1) invert(1);
+}
+
+@media screen and (max-width: 480px) {
+  .nav_links {
+    visibility: hidden;
+  }
+  .nav {
+    display: block;
+    margin: auto;
+  }
+  .logo {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px; /* 50% of your logo width */
+  }
+  .logo img {
+    max-width: 4em;
+    max-height: 4em;
+  }
+}
