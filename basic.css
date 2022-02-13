@@ -108,4 +108,19 @@ a {
   .cursor {
     visibility: hidden;
   }
+  .story {
+    width: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(267, 95%, 76%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #03dac6;
 }
