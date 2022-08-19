@@ -6,7 +6,9 @@ nav {
   margin: auto;
   color: white;
 }
-
+.text-center {
+  text-align: center;
+}
 .logo {
   padding-left: 2em;
 }
