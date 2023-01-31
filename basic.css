@@ -1,3 +1,7 @@
+body {
+  scroll-behavior: smooth;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -22,7 +26,7 @@ nav {
 
 .nav_links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
   padding: 1em;
   font-weight: bold;
@@ -89,6 +93,36 @@ a {
   filter: grayscale(1) invert(1);
 }
 
+.footer {
+  width: 100%;
+  padding: 2rem 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  background-color: black;
+}
+
+.footer-upper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.footer-bottom {
+  margin: 0 auto;
+
+  font-size: smaller;
+  color: grey;
+}
+
 @media screen and (max-width: 480px) {
   .nav_links {
     visibility: hidden;
@@ -102,6 +136,7 @@ a {
     position: absolute;
     left: 50%;
     margin-left: -50px; /* 50% of your logo width */
+    padding: 1em;
   }
   .logo img {
     max-width: 4em;

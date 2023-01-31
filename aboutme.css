@@ -10,7 +10,7 @@
 
 .about-me {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 2em;
   padding-right: 2em;
   margin-bottom: 3em;
@@ -24,8 +24,8 @@
   max-height: 300px;
   max-width: 350px;
   display: block;
-  border-radius: 5px;
-  box-shadow: 0px 5px 10px 2px #2424247e;
+  border-radius: 50%;
+  box-shadow: 0px 1px 1px 8px #03dac6;
 }
 
 .story {
@@ -38,8 +38,34 @@
   font-size: 2.5em;
 }
 
+strong {
+  color: #03dac6;
+}
+
 .story p {
   line-height: 1.6;
+  font-size: 1.2rem;
+  color: hsl(267, 95%, 76%);
+}
+
+.download {
+  outline: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+
+  margin-top: 1rem;
+  background-color: #03dac6;
+
+  font-weight: bold;
+  color: black;
+  cursor: none;
+  transition: ease-in-out all 300ms;
+}
+
+.download:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 10px #03dac6;
 }
 
 @media screen and (max-width: 420px) {

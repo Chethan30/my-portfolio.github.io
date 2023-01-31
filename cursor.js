@@ -20,3 +20,10 @@ links.forEach((link) => {
     cursor.classList.remove("grow");
   });
 });
+
+function openResume() {
+  window.open(
+    "https://drive.google.com/file/d/1joZuaRM6V1pWxYdwqVEaDQty7DfTZaQI/view?usp=sharing",
+    "_blank"
+  );
+}
