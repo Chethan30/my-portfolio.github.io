@@ -21,9 +21,24 @@ links.forEach((link) => {
   });
 });
 
+function ValidateEmail(mail) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+    return true;
+  }
+  alert("You have entered an invalid email address!");
+  return false;
+}
+
 function openResume() {
-  window.open(
-    "https://drive.google.com/file/d/1joZuaRM6V1pWxYdwqVEaDQty7DfTZaQI/view?usp=sharing",
-    "_blank"
-  );
+  let email = prompt("Enter Email to verify you not a bot 🤖 ");
+  let flag = ValidateEmail(email);
+
+  if (flag === true) {
+    window.open(
+      "https://drive.google.com/file/d/1joZuaRM6V1pWxYdwqVEaDQty7DfTZaQI/view?usp=sharing",
+      "_blank"
+    );
+  } else {
+    alert("Sorry ☹️ ");
+  }
 }
